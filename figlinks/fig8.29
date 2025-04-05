@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <sys/acct.h>
 
 #if defined(BSD)	/* different structure in FreeBSD */

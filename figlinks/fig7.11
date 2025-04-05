@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <setjmp.h>
 
 #define	TOK_ADD	   5

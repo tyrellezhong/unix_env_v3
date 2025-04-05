@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <errno.h>
 
 #define	CS_OPEN "/tmp/opend.socket"	/* well-known name */

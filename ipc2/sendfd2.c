@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <sys/socket.h>
 
 #if defined(SCM_CREDS)			/* BSD interface */

@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <fcntl.h>
 
 #define	DEPTH    1000			/* directory depth */

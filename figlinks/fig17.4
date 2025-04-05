@@ -1,4 +1,4 @@
-#include "apue.h"
+#include "../include/apue.h"
 #include <sys/msg.h>
 
 #define MAXMSZ 512

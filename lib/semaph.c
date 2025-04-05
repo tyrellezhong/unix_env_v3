@@ -27,7 +27,7 @@
  * functions.
  */
 
-#include "apue.h"
+#include "../include/apue.h"
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <errno.h>

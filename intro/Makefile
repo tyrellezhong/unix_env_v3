@@ -13,3 +13,7 @@ clean:
 	rm -f $(PROGS) $(TEMPFILES) *.o
 
 include $(ROOT)/Make.libapue.inc
+
+install:
+	mkdir -p build
+	mv $(PROGS) build

@@ -36,3 +36,7 @@ clean:
 		pathconf.sym pathopt.sym sysconf.sym sysopt.sym
 
 include $(ROOT)/Make.libapue.inc
+
+install:
+	mkdir -p build
+	mv $(PROGS) build/

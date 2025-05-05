@@ -24,3 +24,7 @@ clean:
 	rm -f $(PROGS) $(MOREPROGS) $(TEMPFILES) *.o $(ZAP)
 
 include $(ROOT)/Make.libapue.inc
+
+install:
+	mkdir -p build
+	mv $(PROGS) $(MOREPROGS) build

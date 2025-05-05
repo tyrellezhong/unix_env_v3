@@ -19,3 +19,7 @@ clean:
 	rm -f $(PROGS) $(TEMPFILES) *.o $(MEMSTR)
 
 include $(ROOT)/Make.libapue.inc
+
+install: 
+	mkdir -p build
+	mv $(PROGS) $(MEMSTR) build/

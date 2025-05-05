@@ -20,19 +20,20 @@ main()
 	printf("after fflush: %s\n", buf);
 	printf("len of string in buf = %ld\n", (long)strlen(buf));
 
-	memset(buf, 'b', BSZ-2);
+/* 	memset(buf, 'b', BSZ-2);
 	buf[BSZ-2] = '\0';
-	buf[BSZ-1] = 'X';
+	buf[BSZ-1] = 'X'; */
 	fprintf(fp, "hello, world");
-	fseek(fp, 0, SEEK_SET);
+	fseek(fp, 20, SEEK_SET);
 	printf("after  fseek: %s\n", buf);
 	printf("len of string in buf = %ld\n", (long)strlen(buf));
-
+/* 
 	memset(buf, 'c', BSZ-2);
 	buf[BSZ-2] = '\0';
-	buf[BSZ-1] = 'X';
-	fprintf(fp, "hello, world");
-	fclose(fp);
+	buf[BSZ-1] = 'X'; */
+	fprintf(fp, "xxxxx");
+	fflush(fp);
+/* 	fclose(fp); */
 	printf("after fclose: %s\n", buf);
 	printf("len of string in buf = %ld\n", (long)strlen(buf));
 

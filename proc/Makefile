@@ -39,6 +39,6 @@ clean:
 
 include $(ROOT)/Make.libapue.inc
 
-install:
+install: all
 	mkdir -p build
 	mv $(PROGS) $(MOREPROGS) system.o $(ACCT) build

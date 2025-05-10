@@ -9,8 +9,8 @@ main(void)
 	if ((pid = fork()) < 0) {
 		err_sys("fork error");
 	} else if (pid == 0) {			/* child */
-		if (execl("/home/sar/bin/testinterp",
-				  "testinterp", "myarg1", "MY ARG2", (char *)0) < 0)
+		if (execlp("/data/home/taylorzhong/unix_env_v3/proc/build/testinterp.sh",
+				  "testinterp.shxxxxxxxxxxx", "myarg", "MY ARG2", (char *)0) < 0)
 			err_sys("execl error");
 	}
 	if (waitpid(pid, NULL, 0) < 0)	/* parent */

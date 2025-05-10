@@ -10,8 +10,9 @@ main(int argc, char *argv[])
 	for (i = 0; i < argc; i++)		/* echo all command-line args */
 		printf("argv[%d]: %s\n", i, argv[i]);
 
-	for (ptr = environ; *ptr != 0; ptr++)	/* and all env strings */
-		printf("%s\n", *ptr);
+		/* and all env strings */
+/* 	for (ptr = environ; *ptr != 0; ptr++)	
+		printf("%s\n", *ptr); */
 
 	exit(0);
 }
